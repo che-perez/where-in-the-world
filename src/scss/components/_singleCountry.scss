@@ -1,0 +1,115 @@
+//////////////////////
+/// SINGLE COUNTRY
+//////////////////////
+
+.single-country {
+    padding: 20px;
+    margin-top: 50px;
+
+    &__container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &--flag {
+            img {
+                max-width: 350px;
+
+                @media screen and (min-width: 1024px) {
+                    max-width: 650px;
+                }
+            }
+        }
+
+        &--details {
+            align-content: center;
+            display: flex;
+            margin-top: 20px;
+            max-width: 350px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h2 {
+                font-size: 28px;
+                font-weight: 800;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .detail {
+                margin: 5px 0;
+                min-width: 250px;
+
+                &-title {
+                    font-weight: 600;
+                }
+
+                &.languages {
+                    width: 100%;
+                }
+            }
+
+            .borders-countries {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 25px;
+
+                span {
+                    font-weight: 600;
+                    height: 15px;
+                }
+
+                &__list {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &--item {
+                        margin: 2px 5px;
+                    }
+                }
+
+                @media screen and (min-width: 1024px) {
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin: 0 100px;
+                max-width: 600px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
+    }
+}
+
+.link-btn {
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px $dark-gray;
+    -ms-box-shadow: 0 1px 2px $dark-gray;
+    box-shadow: 0 1px 2px $dark-gray;
+    cursor: pointer;
+    height: 28px;
+    align-items: center;
+    text-align: center;
+    line-height: 28px;
+    padding: 0 5px;
+
+    ion-icon {
+        margin: 0 5px;
+        vertical-align: sub;
+    }
+}
+
+.darkmode {
+    .link-btn {
+        background-color: $dark-blue;
+    }
+}
