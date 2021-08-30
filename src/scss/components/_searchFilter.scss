@@ -24,7 +24,12 @@
              padding: 10px;
              height: 25px;
              margin-bottom: 25px;
-             width: 430px;
+             max-width: 300px;
+             width: 100%;
+
+             @media screen and (min-width: 1024px) {
+                width: 430px;
+             }
          }
     }
 }
